@@ -48,11 +48,11 @@ const Navbar = () => {
       </div>
 
       <div className="md:hidden  w-screen py-[10px]  ">
-        <div className="flex justify-between px-[10px]">
-          <p className="font-[nunito]  font-extrabold">ClearerPay</p>
+        <div className="flex justify-between px-[20px]">
+          <p className="font-[nunito]  font-extrabold text-3xl">ClearerPay</p>
 
           <button onClick={() => setMenu(!menu)}>
-            {menu ? <MdOutlineCancel /> : <RxHamburgerMenu />}
+            {menu ? <MdOutlineCancel className="text-2xl" /> : <RxHamburgerMenu className="text-2xl font-bold" />}
           </button>
         </div>
       </div>

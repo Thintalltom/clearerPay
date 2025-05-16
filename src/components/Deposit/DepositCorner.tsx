@@ -18,7 +18,7 @@ const DepositCorner = () => {
   }, []);
   const [selectedOptions, setSelectedOptions] = useState<string>("");
   return (
-    <div className="border-[0.5px] xs:min-w-[360px] xs:max-w-[640px] lg:min-w-[650px] lg:max-w-[800px]  flex flex-col gap-[20px]  bg-white rounded-[10px] px-[20px] py-[10px]">
+    <div className="border-[0.5px] xs:min-w-[300px] xs:max-w-[600px] lg:min-w-[650px] lg:max-w-[800px]  flex flex-col gap-[20px]  bg-white rounded-[10px] px-[20px] py-[10px]">
         <div className="flex  justify-between items-center ">
           <CurrencySelectible
             placeholder={"NGN"}
@@ -35,7 +35,7 @@ const DepositCorner = () => {
           </p>
         </div>
         <div>
-          <p className="text-3xl font-extrabold">34,645,33</p>
+          <p className="text-3xl font-extrabold">₦34,645,33</p>
         </div>
         <div className="flex flex-row justify-between">
           <div className="flex flex-row lg:gap-[10px] xs:gap-[20px]">

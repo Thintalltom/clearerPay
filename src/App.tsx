@@ -5,7 +5,7 @@ function App() {
 
 
   return (
-    <div className='md:px-[40px] bg-zinc-100 xs:px-0 h-[100vh]'>
+    <div className='md:px-[40px] bg-zinc-100 xs:px-[10px] h-full'>
       <Screen />
     </div>
   )
