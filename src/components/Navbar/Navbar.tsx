@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { IoSettingsOutline } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { MdOutlineCancel } from "react-icons/md";
 import { IoMdContact } from "react-icons/io";
 import { LiaTimesSolid } from "react-icons/lia";
 import { IoIosArrowDown } from "react-icons/io";
