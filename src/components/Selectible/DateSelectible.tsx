@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type FC } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import type { CustomSelectProps } from "../../types";
-const CurrencySelectible: FC<CustomSelectProps> = ({
+const DateSelectible: FC<CustomSelectProps> = ({
   options,
   value,
   onChange,
@@ -31,7 +31,7 @@ const CurrencySelectible: FC<CustomSelectProps> = ({
   return (
     <div className={`relative  w-fit`} ref={dropdownRef}>
       <div
-        className={`py-2   bg-white  text-gray-600  
+        className={`py-2 px-[8px]   bg-zinc-100 rounded  text-black  
             cursor-pointer flex justify-between items-center gap-[20px]
             focus:outline-none border-transparent  focus:ring-1 `}
         onClick={() => setIsOpen(true)}
@@ -65,4 +65,4 @@ const CurrencySelectible: FC<CustomSelectProps> = ({
   );
 };
 
-export default CurrencySelectible;
+export default DateSelectible;

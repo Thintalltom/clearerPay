@@ -1,18 +1,9 @@
 import { FaArrowUp, FaArrowDown, FaExchangeAlt } from "react-icons/fa";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import type { transactionProps } from "../../types";
 const RecentTransactions = () => {
-  interface transactionProps {
-    type?: string;
-    icon: string;
-    color: string;
-    recipient: string;
-    time: string;
-    amount: string;
-    amountColor: string;
-    amount2?: string
-    amount2Color?: string
-  }
-  const transactions = [
+
+  const transactions: transactionProps[] = [
     {
       type: "Sent GBP",
       icon: <FaArrowUp />,
@@ -31,8 +22,7 @@ const RecentTransactions = () => {
       amount: "+₦200,000",
       amountColor: "text-black",
       amount2: "-₦1,000/",
-      amount2Color: "text-red-500"
-
+      amount2Color: "text-red-500",
     },
     {
       type: "Receive GBP → NGN",
@@ -72,13 +62,20 @@ const RecentTransactions = () => {
                 Sent to {tx.recipient} • {tx.time}
               </div>
             </div>
-
-            <div className=" md:text-[10px] whitespace-nowrap   px-[20px] xs:hidden md:block  text-gray-500">
-              Sent to {tx.recipient} • {tx.time}
-            </div>
+            
           </div>
+          <div className=" p-[10px]">
+              <div className=" md:text-[10px] whitespace-nowrap text-center  px-[20px] xs:hidden md:block  text-gray-500">
+                Sent to {tx.recipient} • {tx.time}
+              </div>
+            </div>
           <div className="flex items-center space-x-4">
-            <div className={`font-semibold  xs:text-[10px] md:text-[12px] whitespace-nowrap ${ tx.amountColor}`}><span className={`${tx.amount2Color}`}>{tx.amount2}</span><span  className={`${tx.amountColor}`}>{tx.amount}</span></div>
+            <div
+              className={`font-semibold  xs:text-[10px] md:text-[12px] whitespace-nowrap ${tx.amountColor}`}
+            >
+              <span className={`${tx.amount2Color}`}>{tx.amount2}</span>
+              <span className={`${tx.amountColor}`}>{tx.amount}</span>
+            </div>
             <BsThreeDotsVertical className="text-gray-400 cursor-pointer" />
           </div>
         </div>

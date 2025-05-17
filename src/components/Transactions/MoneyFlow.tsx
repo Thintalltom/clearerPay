@@ -6,8 +6,9 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import CurrencySelectible from "../Selectible/CurrencySelectible";
+import DateSelectible from "../Selectible/DateSelectible";
 import { useEffect, useState } from "react";
+import type { dataProps } from "../../types";
 const MoneyFlow = () => {
   const [options, setOptions] = useState<{ label: string; value: string }[]>(
     []
@@ -21,7 +22,7 @@ const MoneyFlow = () => {
   }, []);
   const [selectedOptions, setSelectedOptions] = useState<string>("");
 
-  const data = [
+  const data:dataProps[] = [
     { day: 1, moneyIn: 100000, moneyOut: 50000 },
     { day: 8, moneyIn: 500000, moneyOut: 400000 },
     { day: 15, moneyIn: 1200000, moneyOut: 900000 },
@@ -33,7 +34,7 @@ const MoneyFlow = () => {
     <div className="bg-white p-4 rounded-xl shadow w-full">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-sm font-semibold">Money out/Money in</h2>
-        <CurrencySelectible
+        <DateSelectible
           placeholder={"Date Range"}
           options={options}
           value={selectedOptions}
