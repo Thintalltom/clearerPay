@@ -43,11 +43,11 @@ const MoneyFlow = () => {
       <div className="mt-4 flex justify-between text-sm text-gray-500">
         <span>
           <span className="inline-block w-3 h-3 bg-yellow-400 rounded-full mr-1" />
-          Money in ₦1,000,000
+        <span className="text-[12px]">Money in</span>   ₦1,000,000
         </span>
         <span>
           <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-1" />
-          Money out ₦1,000,000
+          <span className="text-[12px]">Money out</span>  ₦1,000,000
         </span>
       </div>
 

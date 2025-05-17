@@ -23,7 +23,7 @@ const Merchant = () => {
     }
   ]
   return (
-     <div className="  px-[20px] py-[20px]  xs:min-w-[300px] xs:max-w-[600px] lg:min-w-[500px] lg:max-w-[800px] border-[0.5px]  flex flex-col gap-[20px] xs:bg-white bg-white rounded-[10px]">
+     <div className="  px-[20px] py-[20px]  xs:min-w-full  lg:min-w-[500px] lg:max-w-[800px] border-[0.5px]  flex flex-col gap-[20px] xs:bg-white bg-white rounded-[10px]">
         <div className="flex justify-between items-center ">
             <p>Merchants</p>
         <button className="flex justify-center items-center gap-[5px]"> <span><FaPlus /></span>Add Merchants</button>
