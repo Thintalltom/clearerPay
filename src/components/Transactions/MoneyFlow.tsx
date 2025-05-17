@@ -31,7 +31,7 @@ const MoneyFlow = () => {
   ];
 
   return (
-    <div className="bg-white p-4 rounded-xl shadow w-full">
+    <div className="bg-white p-4 rounded-xl border-[1px] w-full">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-sm font-semibold">Money out/Money in</h2>
         <DateSelectible

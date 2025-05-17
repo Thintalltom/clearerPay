@@ -38,7 +38,7 @@ const DepositCorner = () => {
           </p>
         </div>
         <div>
-          <p className="text-3xl font-extrabold">₦34,645,33</p>
+          <p className="text-3xl font-extrabold">₦34,645,333</p>
         </div>
         <div className="flex justify-between  ">
           <div className="flex  lg:gap-[10px] ls:bg-red-500 xs:gap-[20px]">
@@ -49,7 +49,7 @@ const DepositCorner = () => {
               Send
             </button>
           </div>
-          <div className="flex flex-row gap-[10px]">
+          <div className="flex  gap-[10px]">
             <button className="lg:px-[40px] lg:py-[10px] md:px-[40px] md:py-[10px] xs:px-[10px] xs:text-sm xs:py-[10px] rounded-[10px] bg-gray-100 flex flex-row justify-center items-center gap-[5px] font-bold">
               <span>
                 <IoIosArrowRoundDown className="lg:text-2xl xs:text-lg font-bold" />
@@ -57,7 +57,7 @@ const DepositCorner = () => {
               Recieve
             </button>
           </div>
-          <div className="flex flex-row gap-[10px]">
+          <div className="flex gap-[10px]">
             <button className="lg:px-[40px] lg:py-[10px] md:px-[40px] md:py-[10px] xs:px-[10px] xs:text-sm xs:py-[10px] rounded-[10px] bg-gray-100 flex flex-row justify-center items-center gap-[5px] font-bold">
               <span>
                 <LuArrowLeftRight className="lg:text-2xl xs:text-lg font-bold" />
@@ -65,7 +65,7 @@ const DepositCorner = () => {
               Swap
             </button>
           </div>
-          <div className="flex flex-row gap-[10px]">
+          <div className="flex  gap-[10px]">
             <button className="lg:px-[40px] lg:py-[10px] md:px-[40px] md:py-[10px] xs:px-[10px] xs:py-[10px] roundedCircle bg-gray-100 ">
               <PiDotsThreeOutlineVerticalThin className="text-2xl font-bold" />
             </button>
